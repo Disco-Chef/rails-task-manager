@@ -1,17 +1,18 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  # index
+
+  # INDEX
   get 'tasks', to: 'tasks#index'
-  # new
+  # NEW
   get 'tasks/new', to: 'tasks#new'
-  # create
+  # CREATE
   post 'tasks', to: 'tasks#create'
-  # show
+  # SHOW
   get 'tasks/:id', to: 'tasks#show'
-  # edit
+  # EDIT
   get 'tasks/:id/edit', to: 'tasks#edit'
-  # update
+  # UPDATE
   patch 'tasks/:id', to: 'tasks#update'
-  # destroy
+  # DESTROY
   delete 'tasks/:id', to: 'tasks#destroy'
 end
