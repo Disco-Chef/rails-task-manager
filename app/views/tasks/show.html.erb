@@ -1,6 +1,6 @@
 <h2>Task: <%= @task.title %></h2>
 <p>Description: <%= @task.details %>|| Completed: <%= @task.completed %></p>
 
-  <%= link_to "edit", task_edit_path(@task) %>
-  <%= link_to "delete", task_path(@task), method: :delete %>
-  <%= link_to "all tasks", tasks_path %>
+<%= link_to "edit", task_edit_path(@task), class: "btn btn-warning" %>
+<%= link_to "delete", task_path(@task), class: "btn btn-danger", method: :delete %>
+<%= link_to "all tasks", tasks_path, class: "btn btn-primary" %>
